@@ -21,14 +21,14 @@ int main()
 		int countmin = 0;
 
 		for (int i = 0; i < count; i++)
-			if (array[i] < 0) countmin++;
+			if (array[i] > 0) countmin++;
 
 		int* arraymin;
 		arraymin = new int[countmin];
 
 		int j = 0;
 		for(int i = 0; i<count; i++)
-			if (array[i] < 0)
+			if (array[i] > 0)
 			{
 				arraymin[j] = array[i];
 				j++;
